@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>CFBundleDisplayName</key>
-    <string>VirtualCam</string>
-
-    <key>NSCameraUsageDescription</key>
-    <string>VirtualCam needs camera access for live camera preview.</string>
-
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>VirtualCam needs photo library access to select videos.</string>
-
-    <key>UILaunchScreen</key>
-    <dict/>
-</dict>
-</plist>
+<plist version="1.0"><dict>
+<key>CFBundleDisplayName</key><string>VirtualCam</string>
+<key>NSCameraUsageDescription</key><string>Camera access is used for live camera preview.</string>
+<key>NSPhotoLibraryUsageDescription</key><string>Photo library access is used to select a local video.</string>
+<key>UILaunchScreen</key><dict/>
+</dict></plist>
