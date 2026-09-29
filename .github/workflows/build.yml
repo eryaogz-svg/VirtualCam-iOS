@@ -1,0 +1,28 @@
+name: Build VirtualCam
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Build VirtualCam
+        run: |
+          xcodebuild \
+            -project VirtualCam.xcodeproj \
+            -scheme VirtualCam \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            CODE_SIGNING_ALLOWED=NO \
+            build
