@@ -1,0 +1,180 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+		A1 = {
+			isa = PBXProject;
+			buildConfigurationList = C1;
+			compatibilityVersion = "Xcode 14.0";
+			mainGroup = G1;
+			productRefGroup = G2;
+			targets = (T1,);
+		};
+
+		G1 = {
+			isa = PBXGroup;
+			children = (G3, G2);
+			sourceTree = "<group>";
+		};
+
+		G2 = {
+			isa = PBXGroup;
+			children = (P1,);
+			name = Products;
+			sourceTree = "<group>";
+		};
+
+		G3 = {
+			isa = PBXGroup;
+			children = (F1,F2,F3,F4,F5);
+			path = VirtualCam;
+			sourceTree = "<group>";
+		};
+
+		F1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = VirtualCamApp.swift;
+			sourceTree = "<group>";
+		};
+
+		F2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = ContentView.swift;
+			sourceTree = "<group>";
+		};
+
+		F3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = CameraModel.swift;
+			sourceTree = "<group>";
+		};
+
+		F4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = CameraPreview.swift;
+			sourceTree = "<group>";
+		};
+
+		F5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+
+		P1 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			path = VirtualCam.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+
+		B1 = { isa = PBXBuildFile; fileRef = F1; };
+		B2 = { isa = PBXBuildFile; fileRef = F2; };
+		B3 = { isa = PBXBuildFile; fileRef = F3; };
+		B4 = { isa = PBXBuildFile; fileRef = F4; };
+
+		S1 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (B1,B2,B3,B4);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+
+		L1 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+
+		R1 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+
+		T1 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2;
+			buildPhases = (S1,L1,R1);
+			buildRules = ();
+			dependencies = ();
+			name = VirtualCam;
+			productName = VirtualCam;
+			productReference = P1;
+			productType = "com.apple.product-type.application";
+		};
+
+		C1 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (D1,R2);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+
+		C2 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (D2,R3);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+
+		D1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {};
+			name = Debug;
+		};
+
+		R2 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {};
+			name = Release;
+		};
+
+		D2 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VirtualCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtualcam.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+
+		R3 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VirtualCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtualcam.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+	};
+	rootObject = A1;
+}
